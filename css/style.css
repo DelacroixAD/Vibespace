@@ -8,18 +8,18 @@
 @font-face{
     font-family: aeonik;
     font-weight: 200;
-    src: url(./AeonikTRIAL-Light.otf);
+    src: url(../assests/fonts/AeonikTRIAL-Light.otf);
 }
 
 @font-face{
     font-family: aeonik;
     font-weight: 500;
-    src: url(./AeonikTRIAL-Regular.otf);
+    src: url(../assests/fonts/AeonikTRIAL-Regular.otf);
 }
 @font-face {
     font-family:aeonik;
     font-weight: 500;
-    src: url(./AeonikTRIAL-Bold.otf);
+    src: url(../assests/fonts/AeonikTRIAL-Bold.otf);
 }
 *{
     margin:0;
@@ -99,17 +99,63 @@ section.allElems{
 }
 .back{
     position: absolute;
+    top: 5%;
     right: 5%;
-    background-color: red;
+    background-color: var(--tri1);
     border-radius: 10px;
     padding: 10px 18px;
     border: none;
     font-size: 25px;
     font-weight: 300;
     cursor: pointer;
-    
+
+}
+.back:hover{
+    background-color: red;
 }
 .back:active{
     scale: 0.97;
-
+}
+.todo-list-fullpage{
+    
+    display: block;
+}
+.todo-list-fullpage h2{
+    font-size: 67px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.todo-list-fullpage .todo-container{
+    height: 80%;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo-list-fullpage .todo-container .addTask{
+    height: 100%;
+    width: 33%;
+    background-color: var(--tri2);
+    border-radius: 20px;
+}
+.todo-list-fullpage .todo-container .allTask{
+    width: 65%;
+    background-color:var(--tri2);
+    height: 100%;
+    border-radius: 20px;
+}
+.todo-list-fullpage .todo-container .addTask form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+.todo-container .addTask form input{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--sec);
+    border-radius: 5px;
+    border: none;
 }
